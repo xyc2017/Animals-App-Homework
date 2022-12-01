@@ -1,13 +1,78 @@
-#id, h2{
-    background-color: green;
+/* ------------------------index page---------------------------- */
+.index-button{
+    background-color: blueviolet;
+    color: white;
+    border-color: blueviolet;
+    margin-bottom: 20px;
 }
-.show{
-    background-color: brown;
+.index-body{
+    background-image: url("https://img.freepik.com/premium-vector/illustration-funny-zoo-animal-cartoon_50699-631.jpg?w=2000");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: blueviolet;
+    text-align: center;
+    margin-top: 20px;
 }
-body{
-    background-color: aqua;
+.index-h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:black;
+    text-align: center;   
 }
-
-
-
 /* -----------show page------------ */
+.show-body{
+    background-image: url("https://static.vecteezy.com/system/resources/previews/007/819/418/original/zoo-cartoon-illustration-with-safari-animals-elephant-giraffe-lion-monkey-panda-zebra-and-visitors-on-territory-on-forest-background-vector.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: blueviolet;
+    text-align: center;
+}
+.show-main{
+    margin: 0 auto;
+    background-color: white;
+    width: 500px;
+}
+/* ------------------------edit page ------------------------ */
+.edit-body{
+    background-image:url("https://static.vecteezy.com/system/resources/previews/007/819/488/original/zoo-cartoon-illustration-with-safari-animals-lion-tiger-cage-and-visitors-on-territory-on-forest-background-design-vector.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: blueviolet;
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.edit-label{
+    color: blueviolet;
+    font-size: 15px;
+    margin: 20px;
+    
+}
+.edit-legend{
+    font-size: 20px;
+}
+.edit-div{
+    background-color: white;
+}
+/* -------------------------------new page------------------------------------ */
+.new-body{
+    background-image:url("https://static.vecteezy.com/system/resources/previews/007/819/488/original/zoo-cartoon-illustration-with-safari-animals-lion-tiger-cage-and-visitors-on-territory-on-forest-background-design-vector.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: blueviolet;
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+}
+.new-div{
+    background-color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: blueviolet;
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+}

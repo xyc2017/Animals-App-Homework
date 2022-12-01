@@ -2,14 +2,14 @@
 <html lang="en">
     <%- include("../partials/head.ejs") %>
 
-    <body>
+    <body class="edit-body">
         <%- include("../partials/header.ejs") %>
         <main>
-            <div>
+            <div class="edit-div">
                 <form action="/animals/<%=animal._id %>?_method=PUT" method="POST">
-                    <fieldset>
-                        <legend>Edit an <%=animal.species %></legend>
-                        <label>
+                    <fieldset class="edit-fieldset">
+                        <legend class="edit-legend">Edit <%=animal.species %></legend>
+                        <label class="edit-label">
                             Species: <input
                             type="text"
                             name="species"
@@ -17,13 +17,13 @@
                             placeholder="enter the animal species" 
                             />
                         </label>
-                        <label>
+                        <label class="edit-label">
                             Extinct: <input
                             type="checkbox"
                             name="extinct" <%=animal.extinct ? "checked" : "" %>
                             />
                         </label>
-                        <label>
+                        <label class="edit-label">
                             Location: <input
                             type="text"
                             name="location" 
@@ -31,7 +31,7 @@
                             placeholder="enter the animal location" 
                             />
                         </label>
-                        <label>
+                        <label class="edit-label">
                             Life Expectancy: <input
                             type="text"
                             name="lifeExpectancy"
