@@ -28,7 +28,7 @@ router.post('/', (req, res)=>{
     req.body.extinct= req.body.extinct === 'on' ? true : false
     Animals.create(req.body, (err, createdAnimal)=>{
        
-        res.redirect('/')
+        res.redirect('/animals')
     })
 })
 
@@ -44,7 +44,7 @@ router.put('/:id', (req, res)=>{
 // id of the animal I want to update, req.body=whatever data in the form when I hit submit,in the call back function, update to the newest version
     req.body.extinct= req.body.extinct === 'on' ? true : false  
     Animals.findByIdAndUpdate(req.params.id, req.body, {new: true}, (err, updatedAnimal)=>{
-        res.redirect(`/${req.params.id}`)
+        res.redirect(`/animals/${req.params.id}`)
     })
 })
 
@@ -63,7 +63,7 @@ router.delete('/:id', (req, res)=>{
     // })
     Animals.findByIdAndDelete(req.params.id)
     .then((deletedAnimal)=>{
-        res.redirect('/')
+        res.redirect('/animals')
     })
 })
 

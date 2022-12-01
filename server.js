@@ -13,6 +13,9 @@ app.use(methodOverride('_method'))
 app.use(express.urlencoded({extended:true}))
 app.use(express.static('public'))
 app.use('/animals',animalsRouter)
+app.get("/", (req, res) => {
+    res.redirect("/animals")
+}) // making a landing page
 
 app.listen(PORT, ()=>{
     console.log(`express is listening on port: ${PORT}`)
